@@ -94,7 +94,7 @@ gilberto_model.fill_mask('Buongiorno mi <mask> Gilberto!', topk=3) #Fill mask to
 
 ## Contacts
 **Giulio Ravasio**: [Linkedin](https://www.linkedin.com/in/giulio-ravasio-3a81a9110/) | [Twitter](https://twitter.com/GiulioRavasio) | [Github](https://github.com/giuliorav) | [e-mail](giulio.rav@gmail.com)
-
+**Leonardo Di Perna**: [Linkedin](https://www.linkedin.com/in/leonardo-di-perna/) | [Twitter](https://twitter.com/Leodipe94) | [Github](https://github.com/LeoDeep) | [e-mail](dipernaleonardo@gmail.com)
 
 ## References
 * [RoBERTa: A Robustly Optimized BERT Pretraining Approach](https://arxiv.org/abs/1907.11692)
