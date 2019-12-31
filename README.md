@@ -93,7 +93,7 @@ gilberto_model.fill_mask('Buongiorno mi <mask> Gilberto!', topk=3) #Fill mask to
 
 
 ## Contacts
-
+**Giulio Ravasio**: [Linkedin](https://www.linkedin.com/in/giulio-ravasio-3a81a9110/) | [Twitter](https://twitter.com/GiulioRavasio) | [Github](https://github.com/giuliorav) | [e-mail](giulio.rav@gmail.com)
 
 
 ## References
