@@ -1,20 +1,20 @@
 # GilBERTo: Italian RoBERTa
 
-**GilBERTo** is a pretrained language model for **Italian** based on [Facebook RoBERTa architecture](https://arxiv.org/abs/1907.11692).
+**GilBERTo** is an **Italian** pretrained language model based on [Facebook RoBERTa architecture](https://arxiv.org/abs/1907.11692) and [CamemBERT](https://www.researchgate.net/publication/337183733_CamemBERT_a_Tasty_French_Language_Model) text tokenization approach.
 
-Model was trained with the subword masking technique for 100k steps on ~71GB of **Italian text** with 11,250,012,896 words ([OSCAR](https://traces1.inria.fr/oscar/): **O***pen* **S***uper-large* **C***rawled* **A***LMAnaCH* *co***R***pus*). We use a vocabulary of 32k BPE subwords created using [SentencePiece](https://github.com/google/sentencepiece) tokenizer.
+Model was trained with the subword masking technique for 100k steps managing ~71GB of **Italian text** with 11,250,012,896 words ([OSCAR](https://traces1.inria.fr/oscar/): **O***pen* **S***uper-large* **C***rawled* **A***LMAnaCH* *co***R***pus*). We took up a vocabulary of 32k BPE subwords, generated using [SentencePiece](https://github.com/google/sentencepiece) tokenizer.
 
-We evaluate GilBERTo in different downstream tasks, comparing with [mBERT](https://github.com/google-research/bert/blob/master/multilingual.md) and other (not BERT-based) models. Specifically we have compared the models in the following tasks:
+GilBERTo evaluation was executed in different downstream tasks, comparing it to [mBERT](https://github.com/google-research/bert/blob/master/multilingual.md) and other (not BERT-based) models. More specifically, the models comparison was accomplished by executing the following tasks:
 * **P**art-**o**f-**S**peech tagging
 * **N**amed **E**ntity **R**ecognition
 
 ## Download
-**GilBERTo** is available both using *transfomers* and *fairseq* librarires.
+**GilBERTo** is available both using [huggingface/transformers](https://github.com/huggingface/transformers) and [pytorch/fairseq](https://github.com/pytorch/fairseq) librarires.
 
 Model | Library | Download
 ---|:---:|:---:
-`GilBERTo-uncased` |*pytorch/fairseq* |[GilBERTo-uncased-fairseq.v1.zip](tbd)
-`GilBERTo-uncased` |*huggingface/transformers* |[GilBERTo-uncased-transformers.v1.zip](tbd)
+`GilBERTo-uncased-from-camembert` |*pytorch/fairseq* |[GilBERTo-uncased-fairseq.v1.zip](tbd)
+`GilBERTo-uncased-from-camembert` |*huggingface/transformers* |[GilBERTo-uncased-transformers.v1.zip](tbd)
 
 ## Results
 We're writing the paper with all details (*coming soon*). 
@@ -101,7 +101,7 @@ gilberto_model.fill_mask('Buongiorno mi <mask> Gilberto!', topk=3) #Fill mask to
 * [RoBERTa: A Robustly Optimized BERT Pretraining Approach](https://arxiv.org/abs/1907.11692)
 * [Sentencepiece: A simple and language independent subword tokenizer and detokenizer for neural text processing](https://www.aclweb.org/anthology/D18-2012/)
 * [Asynchronous Pipeline for Processing Huge Corpora on Medium to Low Resource Infrastructures](https://hal.inria.fr/hal-02148693)
-* [CamemBERT: a Tasty French Language Model](https://www.researchgate.net/publication/337183733_CamemBERT_a_Tasty_French_Language_Model) (*it gave us inspiration*)
+* [CamemBERT: a Tasty French Language Model](https://www.researchgate.net/publication/337183733_CamemBERT_a_Tasty_French_Language_Model) 
 * [Learning multilingual named entity recognition from Wikipedia](https://figshare.com/articles/Learning_multilingual_named_entity_recognition_from_Wikipedia/5462500)
 * [75 Languages, 1 Model: Parsing Universal Dependencies Universally](https://arxiv.org/abs/1904.02099)
 * [Rajpurkar et al. 2016] Pranav Rajpurkar, Jian Zhang, Konstantin Lopyrev, Percy Liang SQuAD: 100,000+ Questions for Machine Comprehension of Text In the Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP) — November 1–5, 2016 — Austin, Texas, USA.
