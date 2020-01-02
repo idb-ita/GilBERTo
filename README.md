@@ -13,11 +13,11 @@ GilBERTo evaluation was executed in different downstream tasks, comparing it to 
 
 Model | Library | Download
 ---|:---:|:---:
-`GilBERTo-uncased-from-camembert` |*pytorch/fairseq* |[GilBERTo-uncased-fairseq.v1.zip](tbd)
-`GilBERTo-uncased-from-camembert` |*huggingface/transformers* |[GilBERTo-uncased-transformers.v1.zip](tbd)
+`GilBERTo-uncased-from-camembert` |*pytorch/fairseq* |[GilBERTo-uncased-fairseq.v1.zip](https://drive.google.com/uc?id=13kk8EfnJ2wVYLehPSjoskG2swU0Ab3Ch&export=download)
+`GilBERTo-uncased-from-camembert` |*huggingface/transformers* |[GilBERTo-uncased-transformers.v1.zip](https://drive.google.com/uc?id=1hokQynDBnI361rJc4UBSgtP56ZZKRWf2&export=download)
 
 ## Results
-We're writing the paper with all details (*coming soon*). 
+WWe are we are in the drafting phase of the paper including all details (*coming soon*). 
 
 To the best of our knowledge, downstream task applications are limited due to the lack of datasets available for Italian.
 **We strongly recommend everyone to contribute to the repository in order to improve the Italian NLP SOTA**. We will be happy to support.
@@ -44,7 +44,7 @@ GilBERTo|**92.7**|**92.7**|**92.8**
 
 
 ## How to use
-You can simply use **GilBERTo** with the latest version of [huggingface/transformers](https://github.com/huggingface/transformers) or [pytorch/fairseq](https://github.com/pytorch/fairseq) Python libraries.
+You can use **GilBERTo** with the latest version of [huggingface/transformers](https://github.com/huggingface/transformers) or [pytorch/fairseq](https://github.com/pytorch/fairseq) Python libraries.
 ### huggingface/transformers
 ```python
 from transformers import AutoModel, AutoTokenizer
@@ -104,6 +104,4 @@ gilberto_model.fill_mask('Buongiorno mi <mask> Gilberto!', topk=3) #Fill mask to
 * [CamemBERT: a Tasty French Language Model](https://www.researchgate.net/publication/337183733_CamemBERT_a_Tasty_French_Language_Model) 
 * [Learning multilingual named entity recognition from Wikipedia](https://figshare.com/articles/Learning_multilingual_named_entity_recognition_from_Wikipedia/5462500)
 * [75 Languages, 1 Model: Parsing Universal Dependencies Universally](https://arxiv.org/abs/1904.02099)
-* [Rajpurkar et al. 2016] Pranav Rajpurkar, Jian Zhang, Konstantin Lopyrev, Percy Liang SQuAD: 100,000+ Questions for Machine Comprehension of Text In the Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP) — November 1–5, 2016 — Austin, Texas, USA.
-* [Chen et al. 2017] Danqi Chen, Adam Fisch, Jason Weston and Antoine Bordes Reading Wikipedia to Answer Open-Domain Questions. In the Proceedings of the Annual Meeting of the Association for Computational Linguistics (ACL), 2017 Vancouver
-* *[Croce et al. 2018] Danilo Croce, Alexandra Zelenanska, Roberto Basili Neural Learning for Question Answering in Italian. AI*IA 2018 -- Advances in Artificial Intelligence, 2018 Trento. pages 389-402
+
