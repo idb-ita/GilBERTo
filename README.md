@@ -17,7 +17,7 @@ Model | Library | Download
 `GilBERTo-uncased-from-camembert` |*huggingface/transformers* |[GilBERTo-uncased-transformers.v1.zip](https://drive.google.com/uc?id=1hokQynDBnI361rJc4UBSgtP56ZZKRWf2&export=download)
 
 ## Results
-WWe are we are in the drafting phase of the paper including all details (*coming soon*). 
+We are in the drafting phase of the paper including all details (*coming soon*). 
 
 To the best of our knowledge, downstream task applications are limited due to the lack of datasets available for Italian.
 **We strongly recommend everyone to contribute to the repository in order to improve the Italian NLP SOTA**. We will be happy to support.
@@ -48,8 +48,8 @@ You can use **GilBERTo** with the latest version of [huggingface/transformers](h
 ### huggingface/transformers
 ```python
 from transformers import AutoModel, AutoTokenizer
-tokenizer = AutoTokenizer.from_pretrained("idb-ita/tbd", do_lower_case=True)
-model = AutoModel.from_pretrained("idb-ita/tbd")
+tokenizer = AutoTokenizer.from_pretrained("idb-ita/gilberto-uncased-from-camembert", do_lower_case=True)
+model = AutoModel.from_pretrained("idb-ita/gilberto-uncased-from-camembert")
 
 input_ids = torch.tensor(tokenizer.encode("Io sono italiano e mi chiamo GilBERTo!")).unsqueeze(0)  
 #>> tensor([[5, 755, 181, 1413, 25, 155, 12513, 14397, 16247, 31976, 6]])
