@@ -1,4 +1,4 @@
-# GilBERTo: Italian RoBERTa
+# GilBERTo: A pretrained language model based on RoBERTa for Italian
 
 **GilBERTo** is an **Italian** pretrained language model based on [Facebook RoBERTa architecture](https://arxiv.org/abs/1907.11692) and [CamemBERT](https://www.researchgate.net/publication/337183733_CamemBERT_a_Tasty_French_Language_Model) text tokenization approach.
 
